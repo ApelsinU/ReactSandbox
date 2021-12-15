@@ -7,6 +7,9 @@ export default class News extends React.Component {
         const news = [
             { id: 1, title: 'sport' },
             { id: 2, title: 'live' },
+            { id: 3, title: 'weather' },
+            { id: 1, title: 'sport' },
+            { id: 2, title: 'live' },
             { id: 3, title: 'weather' }
         ]
 
@@ -14,7 +17,6 @@ export default class News extends React.Component {
             <div className='news-board'>
                 <NewsList news = {news}></NewsList>
             </div>
-
         )
     }
 }
