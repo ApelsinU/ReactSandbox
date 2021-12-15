@@ -6,7 +6,7 @@ export default class News extends React.Component {
 
         const news = [
             { id: 1, title: 'TagGame' },
-            { id: 2, title: 'Boiling Verdict' },
+            { id: 2, title: 'Boiling Calculator' },
             { id: 3, title: 'Tic-Tac-Toe' },
         ]
 
