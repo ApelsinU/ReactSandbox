@@ -25,12 +25,12 @@ export default class User extends React.Component {
         let username = 'Vadim'
 
         return (
-            <div className='auth'>
+            <div className='login'>
                 <div className='name'>
                     {this.state.isAuth ? username : 'Guest'}
                 </div>
-                <button className='auth-button' onClick={this.handleAuthClick}>
-                    <img className='auth-icon' src={this.state.isAuth ? logoutIcon : loginIcon } alt="auth icon"/>
+                <button className='login-button' onClick={this.handleAuthClick}>
+                    <img className='login-icon' src={this.state.isAuth ? logoutIcon : loginIcon } alt="auth icon"/>
                     <span>{this.state.isAuth ? 'logout' : 'login' }</span>
                 </button>
             </div>

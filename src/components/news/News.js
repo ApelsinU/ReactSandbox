@@ -5,12 +5,9 @@ export default class News extends React.Component {
     render() {
 
         const news = [
-            { id: 1, title: 'sport' },
-            { id: 2, title: 'live' },
-            { id: 3, title: 'weather' },
-            { id: 1, title: 'sport' },
-            { id: 2, title: 'live' },
-            { id: 3, title: 'weather' }
+            { id: 1, title: 'TagGame' },
+            { id: 2, title: 'Boiling Verdict' },
+            { id: 3, title: 'Tic-Tac-Toe' },
         ]
 
         return(

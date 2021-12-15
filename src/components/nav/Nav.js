@@ -1,14 +1,21 @@
 import React from "react";
+import { Link} from "react-router-dom";
 
-import './Nav.sass'
+import './nav.sass'
 
 export default class Header extends React.Component {
     render() {
         return (
             <nav className='nav'>
-                <a href="#" className="nav-link">about</a>
-                <a href="#" className="nav-link">shop</a>
-                <a href="#" className="nav-link">contacts</a>
+                <Link className="nav-link" to={'/'}>
+                    Home
+                </Link>
+                <Link className="nav-link" to={'/about'}>
+                    About
+                </Link>
+                <Link className="nav-link" to={'/contacts'}>
+                    Contacts
+                </Link>
             </nav>
         )
     }

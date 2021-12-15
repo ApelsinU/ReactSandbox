@@ -8,7 +8,10 @@ export default class Logo extends React.Component {
     render() {
 
         return (
-            <img className='logo' src={logo} alt='logo'></img>
+            <div className='logo'>
+                <img className='logo-image' src={logo} alt='logo'></img>
+                <span className='logo-text'>ReactSandbox</span>
+            </div>
         )
     }
 }
