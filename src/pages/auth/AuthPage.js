@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import Logo from "../../components/logo/Logo"
 
 import '../../styles.sass'
@@ -15,8 +16,6 @@ export default class AuthPage extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.name);
-        console.log(this.state.password);
     }
 
     handleChange = (event) => {
@@ -42,7 +41,7 @@ export default class AuthPage extends React.Component {
                                 <span className='label-text'>Pass:</span>
                                 <input type='text' name='password' value={this.state.password} onChange={this.handleChange} className='auth-input'></input>
                             </label>
-                            <button type='submit' className='auth-button'>Log in</button>
+                            <Link to="/"><button type='submit' className='auth-button'>Log in</button></Link>
                         </form>
                     </div>
                 </div>

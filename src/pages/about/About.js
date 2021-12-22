@@ -3,6 +3,7 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
 import './about.sass'
+import '../../styles.sass'
 
 import Gallery from '../../components/gallery/Gallery'
 

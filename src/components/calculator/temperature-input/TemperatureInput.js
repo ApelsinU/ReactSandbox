@@ -10,16 +10,14 @@ export default class TemperatureInput extends React.Component {
 
     render() {
         return(
-            <div>
-                <div className='container'>
-                    <fieldset className='temperature-block'>
-                        <legend>
-                            Temperature in {this.props.scale === 'c' ? 'celsius' : 'fahrenheit'}
-                        </legend>
-                        <input className='temperature-input' value={this.props.temperature} onChange={this.handleChange}></input>
-                    </fieldset>
-                </div>
-            </div>
+            <React.Fragment>
+                <fieldset className='temperature-block'>
+                    <legend>
+                        Temperature in {this.props.scale === 'c' ? 'celsius' : 'fahrenheit'}
+                    </legend>
+                    <input className='temperature-input' value={this.props.temperature} onChange={this.handleChange}></input>
+                </fieldset>
+            </React.Fragment>
         )
     }
 }

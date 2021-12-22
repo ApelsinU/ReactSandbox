@@ -12,8 +12,7 @@ export default class MainPage extends React.Component {
         return (
             <div className='wrapper'>
                 <Header></Header>
-                {/*<Main></Main>*/}
-                <Calculator></Calculator>
+                <Main></Main>
                 <Footer></Footer>
             </div>
         );

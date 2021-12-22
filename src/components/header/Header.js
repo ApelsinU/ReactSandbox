@@ -6,6 +6,7 @@ import User from '../../components/user/User'
 
 import '../../styles.sass'
 import './header.sass'
+import Clock from "../clock/Clock";
 
 export default class Header extends React.Component {
     render() {
@@ -14,7 +15,10 @@ export default class Header extends React.Component {
                 <header className='header'>
                     <Logo></Logo>
                     <Nav></Nav>
-                    <User></User>
+                    <div className='info'>
+                        <Clock className='clock'></Clock>
+                        <User></User>
+                    </div>
                 </header>
             </div>
         )

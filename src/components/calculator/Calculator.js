@@ -37,23 +37,21 @@ export default class Calculator extends React.Component {
 
         return(
             <div className='calculator'>
-                <div className='container'>
-                    <h2>Boiling Calculator</h2>
-                    <TemperatureInput
-                        scale='c'
-                        temperature={celsius}
-                        onTemperatureChange={this.handleCelsiusChange}>
-                    </TemperatureInput>
-                    <TemperatureInput
-                        scale='f'
-                        temperature={fahrenheit}
-                        onTemperatureChange={this.handleFahrenheitChange}
-                    >
-                    </TemperatureInput>
-                    <BoilingVerdict
-                        celsius={parseFloat(celsius)}>
-                    </BoilingVerdict>
-                </div>
+                <h2>Boiling Calculator</h2>
+                <TemperatureInput
+                    scale='c'
+                    temperature={celsius}
+                    onTemperatureChange={this.handleCelsiusChange}>
+                </TemperatureInput>
+                <TemperatureInput
+                    scale='f'
+                    temperature={fahrenheit}
+                    onTemperatureChange={this.handleFahrenheitChange}
+                >
+                </TemperatureInput>
+                <BoilingVerdict
+                    celsius={parseFloat(celsius)}>
+                </BoilingVerdict>
             </div>
         )
     }
